@@ -74,6 +74,22 @@ Even with extreme imbalance, our model identifies the majority of defaults corre
 
 ---
 
+## 🛠️ Git Workflow (Terminal)
+If you make changes and want to update this repository, use the following commands in your terminal:
+
+```bash
+# 1. Stage your changes
+git add .
+
+# 2. Commit with a message
+git commit -m "Describe your changes here"
+
+# 3. Push to GitHub
+git push origin main
+```
+
+---
+
 ## 🚀 How to Run
 
 ### Requirements
