@@ -56,19 +56,19 @@ Standard models use a 0.5 probability threshold to decide if someone defaults. I
 ## 📊 Performance & Insights
 
 ### Precision vs. Recall
-We achieved an **Out-of-Fold (OOF) AUC of 0.9996**. This indicates the model is nearly perfect at ranking borrowers from "lowest risk" to "highest risk."
+We achieved an **Out-of-Fold (OOF) AUC of 0.9996**. This indicates the model is nearly perfect at ranking borrowers from "lowest risk" to "highest risk".
 
 ![PR Curve](pr_curve.png)
 
 ### Key Predictors
 The chart below shows what the model actually cares about. 
 - **`cust_default_rate`** is the #1 predictor. Past behavior is the best predictor of future behavior.
-- **`repayment_ratio`** and **`lender_repay_ratio`** follow closely, showing that the structure of the loan itself dictates risk.
+- **`repayment_ratio`** and **`lender_repay_ratio`** follow closely.
 
 ![Feature Importance](feature_importance.png)
 
 ### Confusion Matrix
-Even with extreme imbalance, our model identifies the majority of defaults correctly while maintaining very high precision for the "paid" class.
+Even with extreme imbalance, our model identifies the majority of defaults correctly.
 
 ![Confusion Matrix](oof_confusion_matrix.png)
 
